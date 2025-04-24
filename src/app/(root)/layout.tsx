@@ -4,6 +4,7 @@ import '@/assets/styles/index.sass';
 import { Providers } from '@/providers/Providers';
 import React from 'react';
 import ThemeSwitcher from '@components/ThemeSwitcher/ThemeSwitcher';
+import Header from '@components/Header/Header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,7 +21,7 @@ export default async function RootLayout({
       <body>
         <Providers>
           <div className='layout'>
-            <ThemeSwitcher />
+            <Header />
             <div className='page'>{children}</div>
           </div>
         </Providers>
