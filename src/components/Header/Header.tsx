@@ -6,8 +6,6 @@ import { auth, signIn, signOut } from '@/auth';
 const Header = async () => {
   const session = await auth();
 
-  console.log(session?.id);
-
   return (
     <header className={styles.header}>
       <ThemeSwitcher />
